@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head><title></title>
+  <link rel="stylesheet" href="Survey-Form.css"> 
+  </head>
+  <body>
+   <h1 id="title"><b>freeCodeCamp Survey Form</b></h1>
+
+    <div class="description">
+      <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+    </div>
+    
+    <form id="survey-form" class="survey-form">
+    <fieldset>
+       <label id="name-label"> Name <input type="text" id="name" required placeholder="Enter your name"></label><br>
+       <label id="email-label">Email  <input type="email" id="email" required placeholder="Enter your email"></label><br>
+      <label id="number-label">Age <span>(optional)</span><input type="number" id="number" min=5 max=10 placeholder="Age"></label><br>
+    <br>
+      Which option best describes your current role?<select id="dropdown" required>
+        <option disabled selected value>Select your current role </option>
+        <option>Student </option>
+        <option>Full Time Job</option>
+        <option>Full Time Learner </option>
+        <option>Prefer not to say</option>
+        <option>Others</option>
+      </select><br><br>
+    
+      Would you recommend freeCodeCamp to a friend?<select id="dropdown" required>
+          <option>Definitely</option>
+          <option>May Be </option>
+          <option>Not Sure </option>
+        </select><br><br>
+
+        What is your favorite feature of freeCodeCamp?<select id="dropdown" required>
+          <option>Challenges</option>
+          <option>Projects </option>
+          <option>Community </option>
+          <option>Open Source </option>
+        </select><br><br>
+      <label>
+        Additional Comments<span>(optional)</span><textarea placeholder="Enter your comments here..">
+          </textarea>
+        </label><br><br><br>
+      
+        <label><button id="submit">Submit</button></label>
+     </fieldset>
+
+
+
+      
+    </form>
+
+  </body>
+</html>
